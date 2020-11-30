@@ -1,0 +1,6 @@
+ from selenium import webdriver
+PATH = "C:\Program Files (x86)\selenium\chromedriver_win32.zip"
+driver = webdriver.Chrome(PATH)
+driver.get("https://stackoverflow.com/questions")
+question_text = driver.find_element_by_link_text("Is it a good coding style (init in if statement but not use it after)")
+print ("Is it a good coding style (init in if statement but not use it after)")
